@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body{
+    scroll-behavior: smooth;
+}
+.pagesLink{
+    @apply shadow-md text-sm py-2 font-semibold bg-lime-600 hover:bg-black hover:text-lime-600 rounded-lg transition-all w-[90%] sm:w-[50%] mx-auto;
+}
+
+.trtdStyle{
+    @apply border border-indigo-900;
+}
+
+/* demUsingDom */
+.title{
+    @apply shadow bg-gray-500 w-[90%] text-white rounded px-2 py-1 mt-1;
+}
+.myText{
+    @apply text-sm shadow bg-slate-300 w-[90%] text-white rounded px-2 py-1 ;
+}
+
+/* Event Handlers style */
+
+.box{
+    @apply w-[90%] bg-white m-1 h-10 flex justify-center items-center
+}
+
+/* Star Rating System */
+
+.stars{
+    @apply flex justify-center items-center text-5xl bg-orange-200 shadow w-[90%] mx-auto p-10 text-white sm:w-[50%]
+}
+.orange{
+    @apply text-orange-600 transition-all
+}
+
+/* Mouse Pointer Tracker */
+.active{
+    @apply bg-red-500
+}
+
+.bcsBox{
+    @apply w-14 h-14 relative top-14 left-[20%] bg-black rounded shadow 
+}

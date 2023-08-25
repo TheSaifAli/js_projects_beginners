@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="text-center text-xl font-bold drop-shadow my-10 text-indigo-700 ">Employee Tracking App</h1>
+    <div class="flex flex-col justify-center items-center w-[90%] mx-auto sm:w-[50%] drop-shadow p-10 bg-indigo-200 rounded ">
+        <input class="w-full border my-1 p-1 text-sm shadow border-indigo-500 shadow-indigo-600 focus:outline-none focus:ring-1 focus:ring-indigo-600 rounded " id="fname" type="text" placeholder="Firstname">
+        <input class="w-full border my-1 p-1 text-sm shadow border-indigo-500 shadow-indigo-600 focus:outline-none focus:ring-1 focus:ring-indigo-600 rounded " id="lname" type="text" placeholder="Lastname">
+        <input class="w-full border my-1 p-1 text-sm shadow border-indigo-500
+        shadow-indigo-600 rounded focus:outline-none focus:ring-1 focus:ring-indigo-600 " id="years" type="number" placeholder="Years">
+        <button class="w-full mt-5  mb-1 text-sm font-semibold py-1 text-white hover:bg-indigo-900 bg-indigo-800 rounded" id="addEmployee">Add Employee</button>
+        <button class="w-full my-1 text-sm font-semibold py-1 text-white hover:bg-indigo-900 bg-indigo-800 rounded" id="getDetail">Get Detail</button>
+    </div>
+    <table id="table" class="mx-auto my-10 w-[90%] sm:w-[60%] text-center border shadow">
+        <th class="text-white bg-indigo-900 border border-indigo-900 w-10 text-sm sm:text-md">First Name</th>
+        <th class="text-white bg-indigo-900 border border-indigo-900 w-10 text-sm sm:text-md">Last Name</th>
+        <th class="text-white bg-indigo-900 border border-indigo-900 w-10 text-sm sm:text-md">Years</th>
+
+    </table>
+    <script src="classes.js"></script>
+</body>
+</html>

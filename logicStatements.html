@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Statements Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="numberGameContainer" class="bg-cyan-400 py-10 flex flex-col justify-center items-center">
+        
+    <div class="shadow rounded p-5 bg-white w-[90%] sm:w-[50%] m-4 mb-10 ">
+        <h1 class="text-xl text-center mb-5 font-bold">Number Game</h1>
+        <input type="number" inputmode="numeric" placeholder="Enter a number" class="w-[90%] border-b-2 border-b-cyan-500 active:outline-none focus:outline-none" id="ngInput">
+        <button class="text-sm bg-cyan-400 px-2 py-1 my-3 text-white font-semibold rounded " id="ngameBtn">Check No.</button>
+        <h1 id="ngoutput" class="text-sm font-semibold text-center "></h1>
+    </div>
+    <!-- Friend Checker Game -->
+    <div class="shadow rounded p-5 bg-white w-[90%] sm:w-[50%]  ">
+        <h1 class="text-xl text-center mb-5 font-bold">Friend Checker Game</h1>
+        <input type="text" placeholder="Enter Friends Name" class="w-[90%] border-b-2 border-b-red-500 active:outline-none focus:outline-none" id="fcgInput">
+        <button class="text-sm bg-red-400 px-2 py-1 my-3 text-white font-semibold rounded " id="fcgameBtn">Check Friend</button>
+        <h1 id="fcgoutput" class="text-sm font-semibold text-center "></h1>
+        
+    </div>
+
+    <!-- Rock Paper Sissor -->
+
+    <div class="shadow rounded p-5 mt-5 bg-white w-[90%] sm:w-[50%]  ">
+        <h1 class="text-xl text-center mb-5 font-bold">Rock Paper Scissor Game</h1>
+        <input type="text" placeholder="Enter Your Choice" class="w-[90%] border-b-2 border-b-orange-500 active:outline-none focus:outline-none" id="rpsInput">
+        <button class="text-sm bg-orange-400 px-2 py-1 my-3 text-white font-semibold rounded " id="rpsUserBtn">Submit Your Choice</button>
+        <h1 id="rpsoutput" class="text-sm font-semibold text-center "></h1>
+        
+    </div>
+    </div>
+    <script src="logicStatements.js"></script>
+</body>
+</html>

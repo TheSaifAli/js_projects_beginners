@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regex</title>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+      .hide {
+        display: none;
+        animation: searching 2s ease-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] rounded-md shadow flex flex-col p-2"
+    >
+      <h1 id="output" class="text-sm mx-1 my-2">
+        Find and replace basic text, type the word or phrase that you want to
+        find, and Word will highlight all instances of the word or phrase
+        throughout the document. To replace found text: Select the magnifying
+        glass, and then select Replace. In the Replace With box, type the
+        replacement text.
+      </h1>
+      <button
+        class="bg-black text-white text-sm px-2 py-1 rounded hover:text-black hover:bg-white hover:ring-black hover:ring-1 active:ring-2 active:ring-red-600 active:text-red-700 transition-all"
+        id="toggleBtn"
+      >
+        find and Replace
+      </button>
+    </div>
+    <div
+      class="w-[50%] shadow p-3 absolute left-[50%] translate-x-[-50%] rounded-md hide"
+      id="container"
+    >
+      <p class="text-left text-sm font-semibold">Search For:</p>
+      <input
+        class="border border-gray-300 rounded text-md w-[90%] mb-2"
+        type="text"
+        id="sText"
+      />
+      <p class="text-left text-sm font-semibold">Replace with:</p>
+      <input
+        class="border border-gray-300 rounded text-md w-[90%] mb-2"
+        type="text"
+        id="rText"
+      />
+      <button
+        class="bg-black text-white px-[1rem] py-1 text-sm rounded-sm hover:text-black hover:bg-white hover:ring-black hover:ring-1 active:ring-2 active:ring-black transition-all"
+        id="repBtn"
+      >
+        Replace
+      </button>
+    </div>
+    <script src="regex.js"></script>
+  </body>
+</html>
